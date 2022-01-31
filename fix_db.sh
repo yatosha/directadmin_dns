@@ -31,7 +31,6 @@ for DA_USER in `ls ${DA_USERS_DIR}`; do
                               echo ""  >> ${NAMED_DIR}/${DOMAIN}.db
                               echo "${DOMAIN}.        14400   IN              A       ${IP}"                             >> ${NAMED_DIR}/${DOMAIN}.db
                               echo "ftp               14400   IN              A       ${IP}"                             >> ${NAMED_DIR}/${DOMAIN}.db
-                              echo "localhost         14400   IN              A       127.0.0.1"                              >> ${NAMED_DIR}/${DOMAIN}.db
                               echo "mail              14400   IN              A       ${IP}"                             >> ${NAMED_DIR}/${DOMAIN}.db
                               echo "pop               14400   IN              A       ${IP}"                             >> ${NAMED_DIR}/${DOMAIN}.db
                               echo "smtp              14400   IN              A       ${IP}"                             >> ${NAMED_DIR}/${DOMAIN}.db

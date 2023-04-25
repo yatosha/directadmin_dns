@@ -1,8 +1,10 @@
 #!/bin/bash
+# bash <( curl -s 'https://raw.githubusercontent.com/yatosha/directadmin_dns/master/yatosha-dns-fix.sh' )
+
 echo "*************************************"
 echo "Reading all named files to named.conf"
 echo "*************************************"
-# bash <( curl -s 'https://raw.githubusercontent.com/yatosha/directadmin_dns/master/fix.sh' )
+bash <( curl -s 'https://raw.githubusercontent.com/yatosha/directadmin_dns/master/fix.sh' )
 echo ""
 echo "Done"
 echo ""

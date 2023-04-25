@@ -25,6 +25,7 @@ domains=$(cat /etc/virtual/domainowners | cut -d ":" -f 1)
 # Loop through the domain list and run the command for each domain
 for domain in $domains
 do
+  echo "Processing domain: $domain"
   /opt/yatosha-dns/yatosha-dns.sh sync "$domain" --ipaddr $ipaddr
 done
 echo "Fixing Completed"
